@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.philosophy-item {
+    margin: 15px 0;
+    padding: 10px;
+    border-left: 4px solid #007bff;
+    background-color: #e9ecef;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+js
+
+const philosophy = {
+    Innovation: "Prioritizing research and development to create cutting-edge, accessible solutions.",
+    Integrity: "Commitment to ethical practices, transparency, and accountability.",
+    Empowerment: "Fostering digital literacy and skill development to uplift communities.",
+    Collaboration: "Building partnerships with stakeholders for collective impact.",
+    Sustainability: "Ensuring solutions positively affect the environment and society."
+};
+
+const philosophyList = document.getElementById('philosophy-list');
+
+// Populate the philosophy items
+for (const [key, value] of Object.entries(philosophy)) {
+    const item = document.createElement('div');
+    item.classList.add('philosophy-item');
+    item.innerHTML = `<strong>${key}:</strong> ${value}`;
+    philosophyList.appendChild(item);
+}

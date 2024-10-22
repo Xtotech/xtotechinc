@@ -1,0 +1,52 @@
+/* Base Styles */
+body {
+    background-color: #121212; /* Dark background */
+    color: #fff; /* White text */
+    font-family: Arial, sans-serif; /* Font style */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Padding around content */
+}
+
+/* Header Styles */
+header {
+    text-align: center; /* Center header text */
+    margin-bottom: 30px; /* Space below header */
+}
+
+/* Main Section Styles */
+main {
+    max-width: 800px; /* Max width for content */
+    margin: 0 auto; /* Center content */
+}
+
+/* History Section Styles */
+.history {
+    margin-bottom: 20px; /* Space below sections */
+}
+
+/* Heading Styles */
+h1 {
+    color: #00ffaa; /* Gold color for main title */
+}
+
+h2 {
+    color: #00ffaa; /* Gold color for section headings */
+}
+
+/* Button Styles */
+button {
+    background-color: #00ffaa; /* Button color */
+    border: none; /* Remove border */
+    color: #000; /* Text color */
+    padding: 10px 15px; /* Padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 20px; /* Space above button */
+    display: block; /* Block display for centering */
+    margin-left: auto; /* Center button */
+    margin-right: auto; /* Center button */
+}
+
+button:hover {
+    background-color: #ffffff; /* Darker shade on hover */
+}
+
